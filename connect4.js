@@ -12,7 +12,6 @@ class Game {
 		this.HEIGHT = HEIGHT;
 		let board = [];
 		let currPlayer = p1;
-		console.log(p1.color);
 		function makeBoard() {
 			for (let y = 0; y < HEIGHT; y++) {
 				board.push(Array.from({ length: WIDTH }));
@@ -65,7 +64,6 @@ class Game {
 			// piece.classList.add(currPlayer);
 			piece.style.top = -50 * (y + 2);
 			piece.style.backgroundColor = currPlayer.color;
-			console.log(currPlayer.color);
 
 			const spot = document.getElementById(`${y}-${x}`);
 			spot.append(piece);
